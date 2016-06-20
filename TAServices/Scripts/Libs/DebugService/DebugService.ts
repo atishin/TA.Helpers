@@ -1,4 +1,4 @@
-﻿namespace TADebugService {
+﻿namespace TA.DebugService {
 
     export interface IDebugService {
         log(...items: any[]);
@@ -51,5 +51,6 @@
         }
     }
     export var module = angular.module('taDebug', []);
-    TADebugService.module.service('taDebugService', ['$log', DebugService]);
+
+    TA.DebugService.module.service('taDebugService', ['$log', DebugService]);
 }
