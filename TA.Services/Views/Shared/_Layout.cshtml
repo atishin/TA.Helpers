@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body ng-app="TestApp">
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+
+    <script src="~/Scripts/Libs/DebugService/DebugService.js"></script>
+    <script src="~/Scripts/Libs/ListenerService/ListenerService.js"></script>
+    <script src="~/Scripts/Libs/SignalRService/SignalRService.js"></script>
+
+    <script src="~/App/TestApp.js"></script>
+    <script src="~/App/TestController.js"></script>
+    <script src="~/App/Listener.js"></script>
+    <script src="~/App/SignalR.js"></script>
+
+    
+
+
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
